@@ -1,0 +1,40 @@
+- - - - - - - - - - - - - - - - - - - - ЗАДАНИЕ - - - - - - - - - - - - - - - - - - - -
+
+Задание 7.1
+Приведите пример графа.
+Задание 7.2
+Реализуйте базовые методы графа.
+Задание 7.3
+В программный код из задания 7.2 добавьте реализацию метода обхода в глубину.
+Выполните оценку времени с помощью System.nanoTime().
+Задание 7.4
+В базовом графе из задания 7.2 реализуйте метод обхода в ширину.
+Выполните оценку времени с помощью System.nanoTime().
+
+- - - - - - - - - - - - - - - - - - - - КОНСОЛЬ - - - - - - - - - - - - - - - - - - - -
+
+- - - - - Задание 7.1 - - - - -
+ Пример графа:
+  транспортные схемы (схема метрополитена и т. д.) изображают в
+  виде станций, соединенных линиями
+- - - - - Задание 7.2 - - - - -
+Vertex{A}
+Vertex{B}
+Vertex{C}
+Vertex{D}
+Vertex{E}
+Vertex{F}
+- - - - - Задание 7.3 - - - - -
+depthFirstWalk('A'): 510000
+ Vertex{A}, Vertex{B}, Vertex{C}, Vertex{D}, Vertex{E}, Vertex{F}
+depthFirstWalk('C'): 12900
+ Vertex{C}, Vertex{B}, Vertex{A}, Vertex{D}, Vertex{E}, Vertex{F}
+depthFirstWalk('E'): 9700
+ Vertex{E}, Vertex{D}, Vertex{A}, Vertex{B}, Vertex{C}, Vertex{F}
+- - - - - Задание 7.4 - - - - -
+breadthFirstWalk('A'): 86400
+ Vertex{A}, Vertex{B}, Vertex{D}, Vertex{F}, Vertex{C}, Vertex{E}
+breadthFirstWalk('C'): 14900
+ Vertex{C}, Vertex{B}, Vertex{A}, Vertex{D}, Vertex{F}, Vertex{E}
+breadthFirstWalk('E'): 13300
+ Vertex{E}, Vertex{D}, Vertex{A}, Vertex{B}, Vertex{F}, Vertex{C}
